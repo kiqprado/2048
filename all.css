@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+:root {
+  --white: #ffffff;
+  --alice-blue: #f0f8ff;
+  --cello: #35495e;
+  --boston-blue: #479fb1;
+  --yellow: #ffe600;
+  --orange: #ff9400;
+  --red: #ff2525;
+  --spring-green: #00ffa7;
+  --sky-blue: #00d5ff;
+  --blue: #0b00ff;
+  --electric-purple: #9800ff;
+  --psychedelic-purple: #ea00ff;
+  --pink: #ff007b;
+  --jacksons-purple: #302d81;
+  --malachite: #2be558;
+  --inch-worm: #aae50d;
+  --blue-stone: #1a695c;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Figtree;
+  background-color: var(--alice-blue);
+  min-height: 75vh;
+  user-select: none;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 6em 0 0 0;
+}
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cello);
+  width: 6.2em;
+  height: 1.8em;
+  padding: 0.3em;
+  border-radius: 0.25em;
+}
+.score:hover {
+  background-color: var(--boston-blue);
+  transition: 0.2s ease;
+}
+.score h2 {
+  font-size: 1rem;
+  color: var(--white);
+}
+#board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 25em;
+  height: 25em;
+  background-color: var(--cello);
+  border: 0.4em solid var(--cello);
+  border-radius: 0.4em;
+  margin: 4em 0 0 0;
+}
+.tile {
+  width: 2.25em;
+  height: 2.25em;
+  border: 0.13em solid var(--cello);
+  background-color: var(--boston-blue);
+  border-radius: 0.4em;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s cubic-bezier(0.4, 0, 1, 1);
+}
+.x2 {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+.x4 {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.x8 {
+  background-color: var(--red);
+  color: var(--white);
+}
+.x16 {
+  background-color: var(--spring-green);
+  color: var(--white);
+}
+.x32 {
+  background-color: var(--sky-blue);
+  color: var(--white);
+}
+.x64 {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.x128 {
+  background-color: var(--electric-purple);
+  color: var(--white);
+}
+.x256 {
+  background-color: var(--psychedelic-purple);
+  color: var(--white);
+}
+.x512 {
+  background-color: var(--pink);
+  color: var(--white);
+}
+.x1024 {
+  background-color: var(--jacksons-purple);
+  color: var(--white);
+}
+.x2048 {
+  background-color: var(--malachite);
+  color: var(--white);
+}
+.x4096 {
+  background-color: var(--inch-worm);
+  color: var(--white);
+}
+.x8192 {
+  background-color: var(--blue-stone);
+  color: var(--white);
+}

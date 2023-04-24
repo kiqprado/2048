@@ -1,0 +1,22 @@
+/*--Smartphones--*/
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 3em 0 0 0;
+  }
+  .score {
+    width: 50px;
+    height: 30px;
+  }
+  .score h2 {
+    font-size: 0.7rem;
+  }
+  #board {
+    width: 300px;
+    height: 300px;
+    margin: 2em 0 0 0;
+  }
+  .tile {
+    width: 65px;
+    height: 65px;
+  }
+}
